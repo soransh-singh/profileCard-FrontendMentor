@@ -10,12 +10,14 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: static;
+      bottom: 0px;
+     }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body{
-      background-color:hsl(185, 75%, 39%);
-      align-content: center;
-    }
+
     .center{
       display: block;
       margin-top: 20vh;
@@ -61,6 +63,13 @@
     .col{
       flex: left;
     }
+    body{
+      background-color:  hsl(185, 75%, 39%);
+      background-image: url("images\\bg-pattern-top.svg"), url("images\\bg-pattern-bottom.svg");
+      background-size: 600px,600px;
+      background-position:-20% -60%,120% 160%;
+      background-repeat: no-repeat, no-repeat;
+    }
   </style>
 </head>
 <body>
@@ -68,7 +77,6 @@
     <img src="images\image-victor.jpg" alt="victor crest">
    <div class="content">
      <span class="name" >Victor Crest</span><br>
-
      26
      London
      <br>
@@ -86,16 +94,13 @@
         1.4K
         Photos
       </div>
-
-
-
     </div>
    </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://soransh-singh.github.io/">Soransh Singh</a>.
-  </div>
-</div>
 
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="https://soransh-singh.github.io/">Soransh Singh</a>.
+</div>
 </body>
 </html>
